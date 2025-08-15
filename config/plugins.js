@@ -32,8 +32,8 @@ module.exports = ({ env }) => ({
         apiKey: env("RESEND_API_KEY"),
       },
       settings: {
-        defaultFrom: "topher@bessaapps.com",
-        defaultReplyTo: "topher@bessaapps.com",
+        defaultFrom: "topher@mail.learnas400.bessaapps.com",
+        defaultReplyTo: "topher@mail.learnas400.bessaapps.com",
       },
     },
   },
