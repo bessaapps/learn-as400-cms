@@ -27,13 +27,13 @@ module.exports = ({ env }) => ({
   },
   email: {
     config: {
-      provider: "strapi-provider-email-resend",
+      provider: "sendgrid",
       providerOptions: {
-        apiKey: env("RESEND_API_KEY"),
+        apiKey: env("SENDGRID_API_KEY"), // Required
       },
       settings: {
-        defaultFrom: "topher@mail.learnas400.bessaapps.com",
-        defaultReplyTo: "topher@mail.learnas400.bessaapps.com",
+        defaultFrom: "topher@bessaapps.com",
+        defaultReplyTo: "topher@bessaapps.com",
       },
     },
   },
