@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "tutoring_descriptions",
+  "info": {
+    "singularName": "tutoring-description",
+    "pluralName": "tutoring-descriptions",
+    "displayName": "Tutoring Description"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Content": {
+      "type": "blocks"
+    }
+  }
+}

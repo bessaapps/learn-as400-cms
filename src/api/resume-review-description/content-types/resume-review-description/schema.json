@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "resume_review_descriptions",
+  "info": {
+    "singularName": "resume-review-description",
+    "pluralName": "resume-review-descriptions",
+    "displayName": "Resume Review Description"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Content": {
+      "type": "blocks"
+    }
+  }
+}

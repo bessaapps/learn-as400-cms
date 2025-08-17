@@ -433,6 +433,64 @@ export interface ApiChaptersDescriptionChaptersDescription
   };
 }
 
+export interface ApiResumeReviewDescriptionResumeReviewDescription
+  extends Struct.SingleTypeSchema {
+  collectionName: 'resume_review_descriptions';
+  info: {
+    displayName: 'Resume Review Description';
+    pluralName: 'resume-review-descriptions';
+    singularName: 'resume-review-description';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Content: Schema.Attribute.Blocks;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::resume-review-description.resume-review-description'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiTutoringDescriptionTutoringDescription
+  extends Struct.SingleTypeSchema {
+  collectionName: 'tutoring_descriptions';
+  info: {
+    displayName: 'Tutoring Description';
+    pluralName: 'tutoring-descriptions';
+    singularName: 'tutoring-description';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Content: Schema.Attribute.Blocks;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::tutoring-description.tutoring-description'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -944,6 +1002,8 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::chapter.chapter': ApiChapterChapter;
       'api::chapters-description.chapters-description': ApiChaptersDescriptionChaptersDescription;
+      'api::resume-review-description.resume-review-description': ApiResumeReviewDescriptionResumeReviewDescription;
+      'api::tutoring-description.tutoring-description': ApiTutoringDescriptionTutoringDescription;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;
