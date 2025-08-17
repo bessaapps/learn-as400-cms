@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "chapters_descriptions",
+  "info": {
+    "singularName": "chapters-description",
+    "pluralName": "chapters-descriptions",
+    "displayName": "Chapters Description"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Content": {
+      "type": "text"
+    }
+  }
+}

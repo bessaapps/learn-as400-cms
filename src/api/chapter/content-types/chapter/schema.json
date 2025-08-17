@@ -11,9 +11,20 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "Chapter": {
+      "type": "string"
+    },
     "Title": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "Content": {
       "type": "blocks"
