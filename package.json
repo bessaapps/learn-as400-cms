@@ -17,13 +17,13 @@
   "dependencies": {
     "@strapi/plugin-cloud": "5.22.0",
     "@strapi/plugin-users-permissions": "5.22.0",
-    "@strapi/provider-email-sendgrid": "^5.22.0",
     "@strapi/provider-upload-aws-s3": "^5.22.0",
     "@strapi/strapi": "5.22.0",
-    "mysql2": "3.9.8",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-router-dom": "^6.0.0",
+    "mysql2": "3.14.3",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.8.1",
+    "strapi-plugin-sortable-entries": "^1.1.0",
     "styled-components": "^6.0.0"
   },
   "engines": {

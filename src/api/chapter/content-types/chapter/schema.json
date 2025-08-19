@@ -28,6 +28,9 @@
     },
     "Content": {
       "type": "blocks"
+    },
+    "sortOrder": {
+      "type": "integer"
     }
   }
 }

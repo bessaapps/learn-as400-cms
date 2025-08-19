@@ -1,4 +1,7 @@
 module.exports = ({ env }) => ({
+  "sortable-entries": {
+    enabled: true,
+  },
   upload: {
     config: {
       provider: "aws-s3",
@@ -22,18 +25,6 @@ module.exports = ({ env }) => ({
         upload: {},
         uploadStream: {},
         delete: {},
-      },
-    },
-  },
-  email: {
-    config: {
-      provider: "sendgrid",
-      providerOptions: {
-        apiKey: env("SENDGRID_API_KEY"), // Required
-      },
-      settings: {
-        defaultFrom: "topher@bessaapps.com",
-        defaultReplyTo: "topher@bessaapps.com",
       },
     },
   },
