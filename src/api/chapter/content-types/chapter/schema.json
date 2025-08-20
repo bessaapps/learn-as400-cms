@@ -31,6 +31,9 @@
     },
     "sortOrder": {
       "type": "integer"
+    },
+    "ChapterNumber": {
+      "type": "integer"
     }
   }
 }

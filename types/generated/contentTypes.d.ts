@@ -385,6 +385,7 @@ export interface ApiChapterChapter extends Struct.CollectionTypeSchema {
   };
   attributes: {
     Chapter: Schema.Attribute.String;
+    ChapterNumber: Schema.Attribute.Integer;
     Content: Schema.Attribute.Blocks;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
