@@ -1,7 +1,4 @@
 module.exports = ({ env }) => ({
-  "sortable-entries": {
-    enabled: true,
-  },
   upload: {
     config: {
       provider: "aws-s3",

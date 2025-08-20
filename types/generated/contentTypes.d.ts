@@ -384,7 +384,6 @@ export interface ApiChapterChapter extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    Chapter: Schema.Attribute.String;
     ChapterNumber: Schema.Attribute.Integer;
     Content: Schema.Attribute.Blocks;
     createdAt: Schema.Attribute.DateTime;
@@ -398,7 +397,6 @@ export interface ApiChapterChapter extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
-    sortOrder: Schema.Attribute.Integer;
     Title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

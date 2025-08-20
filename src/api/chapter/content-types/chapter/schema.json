@@ -19,18 +19,12 @@
         "files"
       ]
     },
-    "Chapter": {
-      "type": "string"
-    },
     "Title": {
       "type": "string",
       "required": false
     },
     "Content": {
       "type": "blocks"
-    },
-    "sortOrder": {
-      "type": "integer"
     },
     "ChapterNumber": {
       "type": "integer"
