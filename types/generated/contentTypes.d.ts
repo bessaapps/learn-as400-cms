@@ -434,6 +434,35 @@ export interface ApiChaptersDescriptionChaptersDescription
   };
 }
 
+export interface ApiCustomerCustomer extends Struct.CollectionTypeSchema {
+  collectionName: 'customers';
+  info: {
+    displayName: 'Customer';
+    pluralName: 'customers';
+    singularName: 'customer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Device: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::customer.customer'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    RevenueCat: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiResumeReviewDescriptionResumeReviewDescription
   extends Struct.SingleTypeSchema {
   collectionName: 'resume_review_descriptions';
@@ -1003,6 +1032,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::chapter.chapter': ApiChapterChapter;
       'api::chapters-description.chapters-description': ApiChaptersDescriptionChaptersDescription;
+      'api::customer.customer': ApiCustomerCustomer;
       'api::resume-review-description.resume-review-description': ApiResumeReviewDescriptionResumeReviewDescription;
       'api::tutoring-description.tutoring-description': ApiTutoringDescriptionTutoringDescription;
       'plugin::content-releases.release': PluginContentReleasesRelease;
