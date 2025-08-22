@@ -11,10 +11,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Device": {
+    "RevenueCat": {
       "type": "string"
     },
-    "RevenueCat": {
+    "Email": {
       "type": "string"
     }
   }
