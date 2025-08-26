@@ -11,10 +11,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "RevenueCat": {
+    "Name": {
       "type": "string"
     },
     "Email": {
+      "type": "string"
+    },
+    "Transaction": {
       "type": "string"
     }
   }

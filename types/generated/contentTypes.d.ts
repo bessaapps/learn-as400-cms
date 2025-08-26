@@ -454,8 +454,9 @@ export interface ApiCustomerCustomer extends Struct.CollectionTypeSchema {
       'api::customer.customer'
     > &
       Schema.Attribute.Private;
+    Name: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    RevenueCat: Schema.Attribute.String;
+    Transaction: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
